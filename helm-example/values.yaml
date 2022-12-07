@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  pullPolicy: IfNotPresent
-  repository: anaisurlichs/helm-go-example
+  pullPolicy: Always
+  repository: rishabh0197/testnginx:latest
 
 imagePullSecrets: []
 nameOverride: ""
