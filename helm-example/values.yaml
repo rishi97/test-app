@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   pullPolicy: Always
-  repository: rishabh0197/testnginx:latest
+  repository: rishabh0197/testnginx
 
 imagePullSecrets: []
 nameOverride: ""
