@@ -4,7 +4,7 @@ pipeline {
         stage('Clone Helm Chart') {
             steps {
                 git 'https://github.com/rishi97/test-app.git'
-//                 sh 'cd helm-example/'
+                sh 'cd helm-example/'
             }
         }
         stage('Build Helm Chart') {
