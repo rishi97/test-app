@@ -3,15 +3,15 @@ pipeline {
     stages {
         stage('Clone Helm Chart') {
             steps {
-                git clone 'https://github.com/rishi97/test-app.git'   
+                git 'https://github.com/rishi97/test-app.git'   
             }
-//             steps {
-//                 sh "pwd"
-//                 dir('helm-example') {
-//                   sh "pwd"
-//                 }
-//                 sh "pwd"
-//             }
+            steps {
+                sh "pwd"
+                dir('helm-example') {
+                  sh "pwd"
+                }
+                sh "pwd"
+            }
         }
         stage('Build Helm Chart') {
             steps {
